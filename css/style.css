@@ -73,6 +73,8 @@ ol,ul{
     background-color: #289BDE;
     border-color: #289BDE;
 }
+
+
 /* Common CSS End */
 
 /* NAV Section Start */
@@ -119,7 +121,35 @@ ol,ul{
     column-gap: 18px;
     align-items: center;
 }
+#nameSelect{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+#nameSelect{
+    height: 100%;
+}
+#nameSelect:hover{
+    cursor: pointer;
+}
+.languageTest{
+    color: #fff;
+}
+#nameSelect option{
+    color: #000;
+}
 .navOthers .navGet{
+    background-color: #5cbef7;
+    border-color: #5cbef7;
+    padding: 20px 40px;
+}
+.navOthers .navGet:hover{
+    background-color: #289BDE;
+    border-color: #289BDE;
     padding: 20px 40px;
 }
 /* NAV Section End */
