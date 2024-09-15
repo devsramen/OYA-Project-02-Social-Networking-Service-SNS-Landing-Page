@@ -654,7 +654,6 @@ form input, textarea::placeholder{
     font-family: "Poppins", sans-serif;
     font-size: 14px;
     color: #666666;
-    text-transform: capitalize;
 }
 .formBtn{
     text-align: center;
