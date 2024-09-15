@@ -14,7 +14,7 @@ body{
 .container{
     max-width: 1340px;
     margin: 0 auto;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 h1,
 h2,
@@ -315,18 +315,229 @@ ol,ul{
     display: inline-block;
     color: #289BDE;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Service Section End */
+/* Commitment Section Start */
+#commitment{
+    background-color: #fff;
+    padding: 140px 0;
+}
+.commitWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+}
+.commitInfo{
+    width: 50%;
+    border: 1px solid red;
+}
+.commitInfo .title{
+    width: 445px;
+    line-height: 1.5;
+}
+.commitInfo ul{
+    margin-top: 50px;
+}
+.commitInfo ul li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: 20px;
+}
+.commitInfo ul li i{
+    width: 47px;
+    height: 47px;
+    line-height: 47px;
+    text-align: center;
+    color: #fff;
+    background-color: #008EFF;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.commitHead{
+    font-size: 26px;
+    font-weight: 600;
+    color: #071B27;
+    margin-top: 10px;
+}
+.commitPara{
+    width: 480px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 12px;
+    text-align: justify;
+}
+.commitInfo ul li:last-child i{
+    background-color: #FABB18;
+}
+.commitInfo ul li:last-child{
+    margin-top: 22px;
+}
+.commitImg{
+    width: 50%;
+    border: 1px solid red;
+}
+.commitImage{
+    max-width: 100%;
+}
+/* Commitment Section End */
+/* Testimonials Section Start */
+#testimonials{
+    background-color: #fff;
+    padding-bottom: 145px;
+}
+.testimonialWrapper .title_center{
+    margin: 15px 0;
+}
+.testimonialPara{
+    width: 620px;
+    margin: 0 auto 58px;
+    line-height: 1.5;
+    text-align: center;
+}
+.testiCardWrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+.testiCard{
+    width: 32%;
+    padding: 27px;
+    border: 1px solid rgba(102, 102, 102, 0.5);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.testiCardHead{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 18px;
+}
+.rating{
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 5px;
+    margin-top: 8px;
+}
+.rating i{
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFB906;
+}
+.testiCardBody{
+    margin-top: 17px;
+}
+.testiCardBody p{
+    font-size: 15px;
+    line-height: 27px;
+    text-align: justify;
+    color: #666666;
+}
+/* Testimonials Section End */
+/* Global Community Section Start */
+#globalCommunity{
+    background-color: #fff;
+    padding-bottom: 140px;
+}
+.globalCommunityWrapper .title_center{
+    margin: 15px 0;
+}
+.globalPara{
+    width: 628px;
+    margin: 0 auto 58px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: justify;
+    color: #666666;
+}
+.globalCommunitys{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.globalThrivingCommunity{
+    width: 438px;
+}
+.globalCardTitle{
+    font-size: 30px;
+    font-weight: 700;
+    /* color: #fff; */
+    display: inline-block;
+    position: relative;
+}
+.globalCardTitle i{
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    /* color: #fff; */
+    font-size: 30px;
+    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+}
+.globalCardTitle::after{
+    content: "";
+    width: 35px;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+}
+
+.globalThrivingCommunity ul{
+    margin-top: 37px;
+}
+.globalThrivingCommunity ul li{
+    font-size: 17px;
+    font-weight: 400;
+    color: #666666;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 10px;
+}
+.globalThrivingCommunity ul li i{
+    width: 27px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    color: #289BDE;
+}
+.globalThrivingCommunity ul li:last-child{
+    margin-bottom: inherit;
+}
+.globalThrivingCommunity ul li p strong{
+
+    display: block;
+    color: #289BDE;
+}
+.globalCommunityBtnWrapper{
+    text-align: center;
+    margin-top: 50px;
+}
+.globalCommunityBtnWrapper .commonBtn{
+    background-color: #008EFF;
+}
+
+
+
+
+
+/* Global Community Section End */
