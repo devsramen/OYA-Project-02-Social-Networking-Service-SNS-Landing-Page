@@ -14,7 +14,6 @@ body{
 .container{
     max-width: 1340px;
     margin: 0 auto;
-    border: 1px solid red;
 }
 h1,
 h2,
@@ -329,7 +328,6 @@ ol,ul{
 }
 .commitInfo{
     width: 50%;
-    border: 1px solid red;
 }
 .commitInfo .title{
     width: 445px;
@@ -378,7 +376,6 @@ ol,ul{
 }
 .commitImg{
     width: 50%;
-    border: 1px solid red;
 }
 .commitImage{
     max-width: 100%;
@@ -737,7 +734,7 @@ form input, textarea::placeholder{
 .footerLogoWrapper{
     border-top:1px solid #fff;
     border-bottom:1px solid #fff;
-    margin: 58px 30px;
+    margin: 58px 0 30px;
     padding: 36px 0;  
 }
 .footerLogoContent{
@@ -756,5 +753,48 @@ form input, textarea::placeholder{
 }
 .footerTerms{
     margin-right: 20px;
+}
+.footerSocialMedia{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.footerSocialMedia i{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    background-color: #007bb6;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+.footerSocialMedia i:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+.footerSocialMedia i:nth-child(2){
+    background-color: #000100;
+}
+.footerSocialMedia i:last-child{
+    background-color: #0081ff;
+}
+.footerBottom{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
 }
 /* Footer Section End */
