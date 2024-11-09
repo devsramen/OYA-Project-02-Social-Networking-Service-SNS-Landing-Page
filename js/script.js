@@ -1,3 +1,18 @@
+// Nav Section Start
+let getStart = document.querySelector("#getStart");
+let drawer = document.querySelector("#drawer");
+let close = document.querySelector("#close");
+getStart.addEventListener("click",()=>{
+    drawer.style.right = "5px"
+})
+close.addEventListener("click",()=>{
+    drawer.style.right = "-301px"
+})
+
+
+
+// Nav Section End
+
 // Banner Section Start
 let banner = document.querySelector("#banner")
 let bannerMouse = document.querySelector("#bannerMouse")

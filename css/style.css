@@ -87,6 +87,75 @@ ol,ul{
     top: -25px;
     z-index: 999999999999999;
 }
+/* ======================================= */
+#drawer{
+    width: 300px;
+    height: auto;
+    background-color: #d1d1d1;
+    position: absolute;
+    top: 112px;
+    right: -301px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+#drawer li{
+    color:#414141;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+#drawer li a{
+    display: block;
+    text-transform: capitalize;
+    padding: 20px;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+#drawer li:hover{
+    background-color: #fff;
+}
+#drawer li:hover a{
+    font-weight: 700;  
+}
+#close{
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+#close:hover{
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+}
+/* ======================================= */
 .navWrapper{
     width: 100%;
     display: flex;
