@@ -156,15 +156,31 @@ ol,ul{
 /* Banner Section Start */
 #banner{
     padding: 277px 0 290px;
-    margin-bottom: 388px;
     color: #fff;
     background-color: #071B27;
     position: relative;
 }
+#bannerMouse{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    border: 1px solid #fff;
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    visibility: hidden;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
 .bannerIllus{
     position: absolute;
-    left: 50%;
-    top: 50%;
+    left: calc(50%);
+    top: calc(50%);
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -213,6 +229,26 @@ ol,ul{
 /* About Section Start */
 #about{
     margin-bottom: 140px;
+    padding-top: 388px;
+    position: relative;
+}
+#aboutMouse{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: green;
+    background-color: yellowgreen;
+    padding: 10px 15px;
+    position: absolute;
+    left: 0;
+    top: 200px;
+    z-index: 99999999;
+    visibility: hidden;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 .aboutPara{
     width: 615px;
@@ -255,6 +291,25 @@ ol,ul{
     padding: 157px 0;
     color: #fff;
     background-color: #071B27;
+    position: relative;
+    border: 1px solid red;
+}
+#serviceMouse{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    border: 1px solid #fff;
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    visibility: hidden;
 }
 #service .title{
     text-transform: capitalize;

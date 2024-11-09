@@ -1,11 +1,41 @@
 // Banner Section Start
 let banner = document.querySelector("#banner")
-banner.addEventListener("click",()=>{
-    console.log("I am Banner");
+let bannerMouse = document.querySelector("#bannerMouse")
+let bannerIllus = document.querySelector(".bannerIllus")
+let bannerImage = document.querySelector(".bannerImage")
+console.log(bannerIllus);
+
+banner.addEventListener("mousemove",(event)=>{
+    // console.log((event.clientX) / 200 + "px", (event.clientY) / 200);
+    // bannerIllus.style.top = `calc(50%) - ${((event.clientX) / 200) + "px"}`;
+    bannerIllus.style.top = `calc(50% - ${((event.clientY) / 200) + "px"})`;
+    bannerIllus.style.left = `calc(50% - ${((event.clientX) / 200) + "px"})`;
+    
+    bannerImage.style.left = `calc(50% - ${((event.clientY) / 150) + "px"})`;
+    bannerImage.style.bottom = `calc(-295px - ${((event.clientX) / 200) + "px"})`;
+    
+    bannerMouse.style.visibility = `visible`;
+    bannerMouse.style.left = `${event.clientX}px`;
+    bannerMouse.style.top = `calc(${((event.clientY)) + "px"} - 180px)`;
+})
+banner.addEventListener("mouseout",(event)=>{
+    bannerMouse.style.visibility = `hidden`;    
 })
 
 // Banner Section End
 
+// About Section Start
+let about = document.querySelector("#about");
+let aboutMouse = document.querySelector("#aboutMouse");
+about.addEventListener("mousemove",(event)=>{
+    aboutMouse.style.visibility = `visible`;
+    aboutMouse.style.left = `${event.clientX}px`;
+    // aboutMouse.style.top = `${event.clientY}px`;
+    aboutMouse.style.top = `calc(${((event.clientY)) + "px"} - 140px)`;    
+})
+about.addEventListener("mouseout",(event)=>{
+    aboutMouse.style.visibility = `hidden`;    
+})
 
 
 let aboutData = [
@@ -51,6 +81,8 @@ let aboutTest = document.querySelector("#aboutCard")
                    </div>`
         }
 })
+// About section End 
+
 // service section start 
 let serviceCardData = [
     {
@@ -102,6 +134,21 @@ serviceCardData.map((item)=>{
         </div>
     </div>`
 })
+
+let service = document.querySelector("#service");
+let serviceMouse = document.querySelector("#serviceMouse");
+service.addEventListener("mousemove",(event)=>{
+    serviceMouse.style.visibility = `visible`;
+    serviceMouse.style.left = `${event.clientX}px`;
+    // aboutMouse.style.top = `${event.clientY}px`;
+    serviceMouse.style.top = `calc(${((event.clientY)) + "px"} - 140px)`;
+    
+})
+service.addEventListener("mouseout",(event)=>{
+    serviceMouse.style.visibility = `hidden`;    
+})
+
+
 // service section end
 
 // commit section start
