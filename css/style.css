@@ -10,6 +10,7 @@ body{
     font-size: 20px;
     font-weight: 400;
     color: #666666;
+    overflow-x: hidden;
 }
 .container{
     max-width: 1340px;
@@ -89,12 +90,12 @@ ol,ul{
 }
 /* ======================================= */
 #drawer{
-    width: 300px;
+    width: 0;
     height: auto;
     background-color: #d1d1d1;
     position: absolute;
     top: 112px;
-    right: -301px;
+    right: 0;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -106,6 +107,11 @@ ol,ul{
     -moz-transition: all linear .4s;
     -ms-transition: all linear .4s;
     -o-transition: all linear .4s;
+    /* transform: translateX(-301px);
+    -webkit-transform: translateX(-301px);
+    -moz-transform: translateX(-301px);
+    -ms-transform: translateX(-301px);
+    -o-transform: translateX(-301px); */
 }
 #drawer li{
     color:#414141;
@@ -297,7 +303,7 @@ ol,ul{
 /* Banner Section End */
 /* About Section Start */
 #about{
-    margin-bottom: 140px;
+    padding-bottom: 140px;
     padding-top: 388px;
     position: relative;
 }

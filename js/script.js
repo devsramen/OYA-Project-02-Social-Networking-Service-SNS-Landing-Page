@@ -3,14 +3,11 @@ let getStart = document.querySelector("#getStart");
 let drawer = document.querySelector("#drawer");
 let close = document.querySelector("#close");
 getStart.addEventListener("click",()=>{
-    drawer.style.right = "5px"
+    drawer.style.width = "300px"
 })
 close.addEventListener("click",()=>{
-    drawer.style.right = "-301px"
+    drawer.style.width = "0"
 })
-
-
-
 // Nav Section End
 
 // Banner Section Start
@@ -19,10 +16,11 @@ let bannerMouse = document.querySelector("#bannerMouse")
 let bannerIllus = document.querySelector(".bannerIllus")
 let bannerImage = document.querySelector(".bannerImage")
 console.log(bannerIllus);
-
+document.addEventListener("mousemove",(event)=>{
+    bannerMouse.style.left = `${event.pageX}px`;
+    bannerMouse.style.top = `calc(${event.pageY}px - 170px)`;    
+})
 banner.addEventListener("mousemove",(event)=>{
-    // console.log((event.clientX) / 200 + "px", (event.clientY) / 200);
-    // bannerIllus.style.top = `calc(50%) - ${((event.clientX) / 200) + "px"}`;
     bannerIllus.style.top = `calc(50% - ${((event.clientY) / 200) + "px"})`;
     bannerIllus.style.left = `calc(50% - ${((event.clientX) / 200) + "px"})`;
     
@@ -30,28 +28,18 @@ banner.addEventListener("mousemove",(event)=>{
     bannerImage.style.bottom = `calc(-295px - ${((event.clientX) / 200) + "px"})`;
     
     bannerMouse.style.visibility = `visible`;
-    bannerMouse.style.left = `${event.clientX}px`;
-    bannerMouse.style.top = `calc(${((event.clientY)) + "px"} - 180px)`;
+    bannerMouse.innerHTML = "Banner"
+    bannerMouse.style.backgroundColor = "#071b27"
 })
-banner.addEventListener("mouseout",(event)=>{
-    bannerMouse.style.visibility = `hidden`;    
-})
-
 // Banner Section End
 
 // About Section Start
 let about = document.querySelector("#about");
 let aboutMouse = document.querySelector("#aboutMouse");
 about.addEventListener("mousemove",(event)=>{
-    aboutMouse.style.visibility = `visible`;
-    aboutMouse.style.left = `${event.clientX}px`;
-    // aboutMouse.style.top = `${event.clientY}px`;
-    aboutMouse.style.top = `calc(${((event.clientY)) + "px"} - 140px)`;    
+    bannerMouse.innerHTML = "About";
+    bannerMouse.style.backgroundColor = "yellowgreen"
 })
-about.addEventListener("mouseout",(event)=>{
-    aboutMouse.style.visibility = `hidden`;    
-})
-
 
 let aboutData = [
     {
@@ -153,20 +141,18 @@ serviceCardData.map((item)=>{
 let service = document.querySelector("#service");
 let serviceMouse = document.querySelector("#serviceMouse");
 service.addEventListener("mousemove",(event)=>{
-    serviceMouse.style.visibility = `visible`;
-    serviceMouse.style.left = `${event.clientX}px`;
-    // aboutMouse.style.top = `${event.clientY}px`;
-    serviceMouse.style.top = `calc(${((event.clientY)) + "px"} - 140px)`;
-    
+    bannerMouse.innerHTML = "Service";
+    bannerMouse.style.backgroundColor = "#071b27"
 })
-service.addEventListener("mouseout",(event)=>{
-    serviceMouse.style.visibility = `hidden`;    
-})
-
 
 // service section end
 
 // commit section start
+let commitment = document.querySelector("#commitment")
+commitment.addEventListener("mousemove",(event)=>{
+    bannerMouse.innerHTML = "commitment";
+    bannerMouse.style.backgroundColor = "#008eff"
+})
  let commitItemWrapperData = [
     {
         commitHead: "Mission",
@@ -195,6 +181,13 @@ service.addEventListener("mouseout",(event)=>{
 // commit section end
 
 // Testimonials Section Start
+let testimonials = document.querySelector("#testimonials")
+testimonials.addEventListener("mousemove",(event)=>{
+    bannerMouse.innerHTML = "Testimonials";
+    bannerMouse.style.backgroundColor = "#ffb906";
+})
+
+
 let testiCardData = [
     {
         testiCardTitle: "Alex, United States",
@@ -270,6 +263,13 @@ testiCardData.map((item)=>{
 
 // Global Community Section Start
 
+let globalCommunity = document.querySelector("#globalCommunity");
+globalCommunity.addEventListener("mousemove",(event)=>{
+    bannerMouse.innerHTML = "Join Us";
+    bannerMouse.style.backgroundColor = "#008eff"
+})
+
+
 // let globalThrivingCommunityData = [
 //     {
 //         globalCardTitle: "SNS & Community Site",
@@ -300,7 +300,6 @@ let globalThrivingCommunityData2=[
         globalCardPara3: "<strong>Make a Positive Impact:</strong> Contribute to meaningful causes and support initiatives that drive positive change."
     }
 ]
-
 
 
 let globalThrivingCommunity = document.querySelectorAll(".globalThrivingCommunity")
@@ -348,3 +347,21 @@ globalThrivingCommunityData2.map((item)=>{
 })
 
 // Global Community Section End
+
+// Contact Section Start
+let contact = document.querySelector("#contact");
+contact.addEventListener("mousemove",(event)=>{
+    bannerMouse.innerHTML = "Contact Info";
+    bannerMouse.style.backgroundColor = "#008eff"
+})
+
+// Contact Section End
+
+// Footer Section Start
+let footer = document.querySelector("#footer");
+footer.addEventListener("mousemove",(event)=>{
+    bannerMouse.innerHTML = "footer";
+    bannerMouse.style.backgroundColor = "#5eb4e6"
+})
+
+// Footer Section End
