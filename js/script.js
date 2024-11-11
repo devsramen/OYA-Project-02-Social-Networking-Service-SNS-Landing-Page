@@ -2,11 +2,12 @@
 let getStart = document.querySelector("#getStart");
 let drawer = document.querySelector("#drawer");
 let close = document.querySelector("#close");
+
 getStart.addEventListener("click",()=>{
-    drawer.style.width = "300px"
+    drawer.style.right = "0"
 })
 close.addEventListener("click",()=>{
-    drawer.style.width = "0"
+    drawer.style.right = "-301px"
 })
 // Nav Section End
 
